@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /*
- * main- entry point
+ * main- entry point code
  * Description: alphabets
  * Return: zero on success
  */
