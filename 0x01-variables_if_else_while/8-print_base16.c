@@ -13,18 +13,16 @@ int main(void)
 	num = 0;
 	alph = 'a';
 
-	while (num <= 15)
+	while (num <= 9)
 	{
-		if (num <= 9)
-		{
-			putchar(num);
-			num++;
-		}
-		else
-		{
-			putchar(alph);
-			alph++;
-		}
+		putchar(num);
+		num++
+	}
+
+	while(alph <= f)
+	{
+		putchar(alph);
+		alph++;
 	}
 	putchar('\n');
 
