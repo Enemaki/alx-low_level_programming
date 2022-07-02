@@ -2,13 +2,13 @@
 #include <stdlib.h>
 #include <time.h>
 /*
- * main- entry point and printing alphabets
+ * main- entry point
+ * Description: alphabets
  * Return: zero on success
  */
 int main(void)
 {
 	char c;
-
 	c = 'a';
 
 	while (c <= 'z')
@@ -17,6 +17,5 @@ int main(void)
 		c = c + 1;
 	}
 	putchar('\n');
-
 	return (0);
 }
