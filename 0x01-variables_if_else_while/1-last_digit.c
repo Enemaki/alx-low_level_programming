@@ -6,7 +6,7 @@
  * *main - Entry point
  * *Description: Last digits
  * *Return: zero on success
- * */
+ */
 
 int main(void)
 {
