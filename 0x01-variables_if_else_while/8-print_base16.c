@@ -7,11 +7,9 @@
 
 int main(void)
 {
-	int num;
-	char alph;
+	char num;
 
-	num = 0;
-	alph = 'a';
+	num = '0'
 
 	while (num <= 9)
 	{
@@ -19,10 +17,12 @@ int main(void)
 		num++;
 	}
 
-	while(alph <= 'f')
+	num = 'a';
+
+	while (num <= 'f')
 	{
-		putchar(alph);
-		alph++;
+		putchar(num);
+		num++;
 	}
 	putchar('\n');
 
