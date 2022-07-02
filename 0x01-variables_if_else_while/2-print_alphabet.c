@@ -6,9 +6,11 @@
  * Description: alphabets
  * Return: zero on success
  */
+
 int main(void)
 {
 	char c;
+
 	c = 'a';
 
 	while (c <= 'z')
