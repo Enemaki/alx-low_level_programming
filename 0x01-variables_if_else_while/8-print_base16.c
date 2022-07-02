@@ -19,7 +19,7 @@ int main(void)
 		num++;
 	}
 
-	while(alph <= f)
+	while(alph <= 'f')
 	{
 		putchar(alph);
 		alph++;
