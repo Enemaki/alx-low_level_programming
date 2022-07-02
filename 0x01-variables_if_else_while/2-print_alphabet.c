@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /*
- * main - Entry point 
- * Description: Alphabets
+ * main- entry point and printing alphabets
  * Return: zero on success
  */
 int main(void)
