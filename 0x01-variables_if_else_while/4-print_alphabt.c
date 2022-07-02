@@ -13,14 +13,14 @@ int main(void)
 
 	while (alph <= 'z') 
 	{
-		if (alph = ('e' || 'q'))
+		if (alph == ('e' || 'q')
 		{
 			alph += 1;
 		}
 		else
 		{
 			putchar(alph);
-			alph +=1;
+			alph += 1;
 		}
 	}
 	putchar('\n');
