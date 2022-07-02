@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- * main - entry point
+ * main- entry point
  * Description: Alphabets
  * Return: zero on success
  */
