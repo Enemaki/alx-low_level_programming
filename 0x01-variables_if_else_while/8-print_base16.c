@@ -8,12 +8,12 @@
 int main(void)
 {
 	int num;
-	int alph;
+	char alph;
 
 	num = 0;
 	alph = 'a';
 
-	while(num <= 15)
+	while (num <= 15)
 	{
 		if (num <= 9)
 		{
