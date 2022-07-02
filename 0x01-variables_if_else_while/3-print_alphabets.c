@@ -16,6 +16,7 @@ int main(void)
 	while (alph_l <= 'z')
 	{
 		putchar(alph_l);
+		alph_l += 1;
 	}
 
 	alph_u = 'A';
@@ -23,6 +24,7 @@ int main(void)
 	while (alph_u <= 'Z')
 	{
 		putchar(alph_u);
+		alph_u += 1;
 	}
 
 	putchar('\n');
