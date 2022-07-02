@@ -13,7 +13,7 @@ int main(void)
 
 	while (alph <= 'z') 
 	{
-		if (alph == ('e' || 'q')
+		if (alph == ('e' || 'q'))
 		{
 			alph += 1;
 		}
