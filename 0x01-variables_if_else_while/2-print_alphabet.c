@@ -1,8 +1,8 @@
 #include <stdio.h>
 /*
  * main - entry point
- * description: print alphabet in lowercase
- * Return: return zero for success
+ * description : print alphabet in lowercase
+ * Return : return zero for success
  */
 int main(void)
 {
@@ -13,6 +13,7 @@ int main(void)
 	while(c <= 'z')
 	{
 		putchar(c);
+		putchar('\n');
 		c = c + 1;
 	}
 	return (0);
