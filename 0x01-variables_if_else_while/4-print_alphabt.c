@@ -11,9 +11,13 @@ int main(void)
 
 	alph = 'a';
 
-	while (alph <= 'z') 
+	while (alph <= 'z')
 	{
-		if (alph == ('e' || 'q'))
+		if (alph == 'e')
+		{
+			alph += 1;
+		}
+		else if (alph == 'q')
 		{
 			alph += 1;
 		}
