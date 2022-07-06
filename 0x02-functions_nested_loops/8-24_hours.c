@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * jack_bauer- function prints every minute of bauer's day
- * n from 00:00 to 23:59, min loop counts mins, while hour loop counts hours and resets mins
+ * n from 00:00 to 23:59, min loop counts mins,
+ * while hour loop counts hours and resets mins
  * Return: always 0
  */
 
@@ -9,9 +10,9 @@ void jack_bauer(void)
 {
 	int i, j, k, l;
 
-	for (i = 0; i <=6; i++)
+	for (i = 0; i <= 2; i++)
 	{
-		for (j = 0; j <= 9; j++)
+		for (j = 0; j < 4; j++)
 		{
 			for (k = 0; k <= 6; k++)
 			{
