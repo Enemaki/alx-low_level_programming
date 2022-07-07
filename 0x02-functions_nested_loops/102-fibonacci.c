@@ -27,6 +27,5 @@ int main(void)
 		j = k;
 		k = next;
 	}
-	
 	return (0);
 }
