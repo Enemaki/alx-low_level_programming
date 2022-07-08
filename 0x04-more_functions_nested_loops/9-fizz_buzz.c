@@ -29,8 +29,12 @@ int main(void)
 		}
 		else
 		{
-			printf("%d", i);
+			printf("%i", i);
 			printf(" ");
+		}
+		if (i != 100)
+		{
+			putchar(' ');
 		}
 	}
 	putchar('\n');
