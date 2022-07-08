@@ -4,13 +4,14 @@
  * print_diagonal- function draws a diagonal
  * @n: is the argument that determines,
  * the number of times the diagonal is printed
+ * Return: void
  */
 
 void print_diagonal(int n)
 {
 	int i = 0, j;
 
-	while (i < n && i > 0)
+	while (i < n && n > 0)
 	{
 		j = 0;
 		if (i > j)
@@ -23,5 +24,7 @@ void print_diagonal(int n)
 		i++;
 	}
 	if (n <= 0)
+	{
 		_putchar('\n');
+	}
 }
