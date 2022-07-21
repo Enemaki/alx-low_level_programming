@@ -1,47 +1,48 @@
 #include "main.h"
 /**
- * _strlen_recursion- function that returns the length of a string
- * @s: string to be used
- * Return: void
+ * _strlen_recursion - return string length
+ * @s: string point
+ * Return: recursion
  */
+
 int _strlen_recursion(char *s)
 {
-	if (*s != '\0')
-	{
-		return (1 + _strlen_recursion((s + 1)));
-	}
-	else
+	if (!*s)
 	{
 		return (0);
+		return (1 + _strlen_recursion(++s));
 	}
 }
+
 /**
- * pal- function compares two strings
- * @s: first string
- * @t: second string
- * Return: 0 or 1
+ * pal - palindrome
+ * @s: pointer to string
+ * @l: position
+ * Return: boolena
  */
-int pal(char *s, char *t)
+
+int pal(char *s, int l)
 {
-	if (*s == *t)
+	if (l < 1)
 	{
-		return (pal((s + 1), (t + 1)));
-		if (*s == '\0')
-		{
-			return (1);
-		}
+		return (1);
+	}
+	if (*s == *(s + l))
+	{
+		return (pal(s + 1, l - 2));
 	}
 	return (0);
 }
+
 /**
- * is_palindrome- checks if a string is a palindrome
- * @s: string to be compared
- * Return: 0 or 1
+ * is_palindrome - palindrome
+ * @s: pointer to string
+ * Return: recursion
  */
+
 int is_palindrome(char *s)
 {
-	char *t;
+	int len = _strlen_recursion(s);
 
-	t = _strlen_recursion(s);
-	return (pal(s, t));
+	return (pal(s, len - 1));
 }
