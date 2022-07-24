@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 /**
  * main- program prints the sum of two numbers, followed by a new line
@@ -13,7 +14,7 @@ int main(int argc, char *argv[])
 
 	if (argc == 3)
 	{
-		result = argv[argc - 2] + argv[argc - 1];
+		result = atoi(argv[argc - 2]) + atoi(argv[argc - 1]);
 		printf("%d\n", result);
 	}
 	else
