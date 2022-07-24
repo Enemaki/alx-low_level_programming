@@ -11,7 +11,9 @@
 int main(int argc, char *argv[])
 {
 	int num1, num2;
+
 	char *s1 = argv[1];
+
 	char *s2 = argv[2];
 
 	num1 = num2 = 0;
