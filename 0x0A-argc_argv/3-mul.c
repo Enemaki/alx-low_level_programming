@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main- program that prints its name, followed by a new line
+ * main- program prints the sum of two numbers, followed by a new line
  * @argc: count of arguments
  * @argv: array of arguments to main
- * Return: program name
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
@@ -14,10 +14,11 @@ int main(int argc, char *argv[])
 	if (argc == 3)
 	{
 		result = argv[argc - 2] + argv[argc - 1];
+		printf("%d\n", result);
 	}
 	else
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
 	return (0);
