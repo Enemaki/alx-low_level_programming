@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		num2 = -1 * atoi(&s2[1]);
+		num2 = atoi(&s2[0]);
 	}
 	printf("%d\n", num1 * num2);
 	return (0);
