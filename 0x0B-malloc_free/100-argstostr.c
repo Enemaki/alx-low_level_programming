@@ -19,7 +19,7 @@ char *argstostr(int ac, char **av)
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
-	}i
+	}
 	for (i = 0; i < ac; i++)
 	{
 		j = 0;
