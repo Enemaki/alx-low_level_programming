@@ -12,17 +12,18 @@
 char *argstostr(int ac, char **av)
 {
 	char *str;
-	int i, j;
+	int i;
+	int j;
 	int count = 0;
 
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
-	}
+	}i
 	for (i = 0; i < ac; i++)
 	{
 		j = 0;
-		while (av[i][j])
+		while (av[i][j++])
 		{
 			count++;
 		}
