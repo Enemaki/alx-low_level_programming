@@ -6,10 +6,12 @@
  * @name: argument of type char
  * @age: argument of type float
  * @owner: argument of type char
+ * Return: Nothing
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
+	d = malloc(sizeof(struct dog));
 	if (d == NULL)
 	{
 		return;
