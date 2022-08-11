@@ -19,7 +19,7 @@ int _strlen(const char *str)
 	return (i);
 }
 /**
- * add_node- function that adds a new node
+ * add_node_end- function that adds a new node
  * at the beginning of a list_t list.
  * @head: pointer to poiter
  * @str: string to be added
@@ -39,7 +39,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	new->len = _strlen(str);
 	new->next = NULL;
 	ptr = *head;
-	if (ptr->next = NULL)
+	if (ptr->next == NULL)
 	{
 		*head = new;
 		return (new);
