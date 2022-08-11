@@ -4,10 +4,14 @@
  * @str: string argument
  * Return: string length
  */
-unsigned int _strlen(char *str)
+int _strlen(const char *str)
 {
 	int i = 0;
 
+	if (str == NULL)
+	{
+		return (0);
+	}
 	while (str[i])
 	{
 		i++;
@@ -26,13 +30,14 @@ list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new;
 
-	new->str = strdup(str);
-	new->len = _strlen(str);
-	new->next = &head;
-	*head = new;
-	if (head == NULL)
+	new = malloc(sizeof(list_t));
+	if (new == NULL)
 	{
 		return (NULL);
 	}
-	return (&head);
+	new->str = strdup(str);
+	new->len = _strlen(str);
+	new->next = *head;
+	*head = new;
+	return (new);
 }
