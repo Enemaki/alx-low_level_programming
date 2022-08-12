@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 void tortoiseAndHare(void) __attribute__ ((constructor));
 
 /**
