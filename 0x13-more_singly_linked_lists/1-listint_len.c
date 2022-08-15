@@ -8,14 +8,14 @@
 
 size_t listint_len(const listint_t *h)
 {
-	listint_t *temp;
+	const listint_t *temp;
 	int printed;
 
 	temp = h;
 	while (temp != NULL)
 	{
 		printed += 1;
-		temp = temp.next;
+		temp = temp->next;
 	}
 	return (printed);
 }

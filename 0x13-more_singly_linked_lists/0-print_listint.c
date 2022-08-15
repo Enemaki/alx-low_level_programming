@@ -8,7 +8,7 @@
 
 size_t print_listint(const listint_t *h)
 {
-	listint_t *temp;
+	const listint_t *temp;
 	int printed;
 
 	temp = h;
@@ -16,7 +16,7 @@ size_t print_listint(const listint_t *h)
 	{
 		printf("%d", temp->n);
 		printed += 1;
-		temp = temp.next;
+		temp = temp->next;
 	}
 	return (printed);
 }
