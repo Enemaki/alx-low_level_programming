@@ -39,6 +39,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		rem = num % 10;
 		decimal_num = decimal_num + rem * base;
+		num = num / 10;
 		base = base * 2;
 	}
 	return (decimal_num);
