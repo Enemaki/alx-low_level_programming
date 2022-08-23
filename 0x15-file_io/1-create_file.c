@@ -9,7 +9,7 @@ int _strlen(char *s)
 	int len;
 	int i = 0;
 
-	while (s[i] != '\0')
+	while (s[i])
 	{
 		len++;
 		i++;
@@ -29,7 +29,6 @@ int create_file(const char *filename, char *text_content)
 	int ld;
 	int wr;
 
-	ld = _strlen(text_content);
 	if (filename == NULL)
 		return (-1);
 	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
@@ -39,10 +38,11 @@ int create_file(const char *filename, char *text_content)
 	{
 		text_content = "";
 	}
+
+	ld = _strlen(text_content);
 	wr = write(fd, text_content, ld);
 	if (wr == -1)
 	{
-		close(fd);
 		return (-1);
 	}
 	close(fd);
